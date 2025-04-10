@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'FaceBeauty'
-  spec.version      = '4.0.0-rc'
+  spec.version      = '4.0.0'
   spec.summary      = 'An advanced face beautify framework.'
   spec.description  = 'FaceBeauty.framework provides advanced facial beautification features.'
   spec.homepage     = 'https://github.com/FaceBeauty/FaceBeautyPod.git'
