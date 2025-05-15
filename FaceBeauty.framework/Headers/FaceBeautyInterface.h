@@ -52,34 +52,6 @@
 @end
 
 /**
- * 人手检测结果报告
- */
-@interface FBHandDetectionReport : NSObject
-
-/// 人手识别概率值
-@property (nonatomic, assign) CGFloat score;
-
-/// 人手区域矩形框
-@property (nonatomic, assign) CGRect rect;
-
-/// 人手区域中心点坐标
-@property (nonatomic, assign) CGPoint centerPoint;
-
-/// 人手（偏离正向）角度
-@property (nonatomic, assign) CGFloat rotation;
-
-/// 人手区域顶点坐标
-@property (nonatomic, assign) CGPoint *position;
-
-/// 人手骨骼关键点坐标
-@property (nonatomic, assign) CGPoint *keyPoints;
-
-/// 手势类型 @see FBGestureEnum
-@property (nonatomic, assign) int gesture;
-
-@end
-
-/**
  * 人体检测结果报告
  */
 @interface FBPoseDetectionReport : NSObject
@@ -293,6 +265,18 @@ typedef NS_ENUM(NSInteger, FBAITypes) {
  *             "sg"，海外节点-新加坡
  */
 - (void)setAuthNetworkNode:(NSString *)node;
+
+#pragma mark - 资源文件拷贝
+
+/**
+ * 拷贝资源文件到指定沙盒路径
+ *
+ * @param bundlePath 本地资源文件路径
+ * @param sandboxPath 目标沙盒路径
+ *
+ * @return 拷贝是否成功
+ */
+- (BOOL)copyResourceBundle:(NSString *)bundlePath toSandbox:(NSString *)sandboxPath;
 
 #pragma mark - 初始化
 
@@ -734,11 +718,6 @@ typedef NS_ENUM(NSInteger, FBAITypes) {
 - (NSArray<FBFaceDetectionReport *> *)getFaceDetectionReport;
 
 /**
- * 获取人手检测结果报告
- */
-- (NSArray<FBHandDetectionReport *> *)getHandDetectionReport;
-
-/**
  * 判断是否检测到全身人体
  *
  * @return 检测到的全身人体个数，返回 0 代表没有检测到全身人体
@@ -828,12 +807,5 @@ typedef NS_ENUM(NSInteger, FBAITypes) {
  * @return 素材网络路径
  */
 - (NSString *)getResourceUrl;
-
-/**
- * 设置资源拷贝至沙盒的自定义目标路径
- *
- * @param path 路径
- */
-- (void)setResourcePath:(NSString *)path;
 
 @end
