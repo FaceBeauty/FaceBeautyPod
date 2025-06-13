@@ -78,13 +78,15 @@ typedef NS_ENUM(NSInteger, FBBeautyTypes) {
     FBBeautySkinWhitening       = 0, //!< 美白，0~100，0为无效果
     FBBeautyClearSmoothing      = 1, //!< 精细磨皮，0~100，0为无效果
     FBBeautySkinRosiness        = 2, //!< 红润，0~100，0为无效果
-    FBBeautyImageSharpness      = 3, //!< 清晰，0~100，0为无效果
+    FBBeautyImageSharpness      = 3, //!< 锐化（原清晰），0~100，0为无效果
     FBBeautyImageBrightness     = 4, //!< 亮度，-50~50，0为无效果
     FBBeautyDarkCircleLessening = 5, //!< 去黑眼圈，0~100，0为无效果
     FBBeautyNasolabialLessening = 6, //!< 去法令纹，0~100，0为无效果
-    FBBeautyToothWhitening      = 7, //!< 美牙，0～100，0为无效果 <未开通，预留接口参数>
-    FBBeautyEyeBrightening      = 8, //!< 亮眼，0～100，0为无效果 <未开通，预留接口参数>
-    FBBeautyWhiteBalance        = 9  //!< 白平衡，-50-50，0为无效果
+    FBBeautyToothWhitening      = 7, //!< 美牙，0～100，0为无效果
+    FBBeautyEyeBrightening      = 8, //!< 亮眼，0～100，0为无效果
+    FBBeautyWhiteBalance        = 9,  //!< 白平衡，-50-50，0为无效果
+    FBBeautyImageClarity        = 10, //!< 清晰，0-100， 0为无效果
+    FBBeautyFaceContouring      = 11 //!< 五官立体，0-100， 0为无效果
 };
 
 /**
