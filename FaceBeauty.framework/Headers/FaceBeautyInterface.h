@@ -245,13 +245,12 @@ typedef NS_ENUM(NSInteger, FBGestureEnum) {
 /**
  * AI驱动类型枚举
  */
-typedef NS_ENUM(NSInteger, FBAITypes) {
-    FBAIFace106         = 0, //!< 人脸106关键点检测
-    FBAIFace278         = 1, //!< 人脸278关键点检测
-    FBAIHairParser      = 2, //!< 头发分割
-    FBAIPortraitMatting = 3, //!< 人像分割
-    FBAIHand            = 4, //!< 人手检测
-    FBAIPose            = 5  //!< 人体检测
+typedef NS_ENUM(NSInteger, NeonAITypes) {
+    AINeonFace            = 0, //!< 人脸检测
+    AINeonHair            = 1, //!< 头发分割
+    AINeonMatting         = 2, //!< 人像分割
+    AINeonHand            = 3, //!< 人手检测
+    AINeonPose            = 4  //!< 人体检测
 };
 
 #pragma mark - 单例
