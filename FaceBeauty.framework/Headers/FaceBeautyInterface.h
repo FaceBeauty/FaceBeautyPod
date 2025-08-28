@@ -318,6 +318,12 @@ typedef NS_ENUM(NSInteger, NeonAITypes) {
  */
 - (int)authOffline:(NSString *)license;
 
+/**
+ * 鉴权初始化结果，用于uniapp端
+ *
+ * @return 获取鉴权结果
+ */
+- (int)getAuthResult;
 
 #pragma mark - 渲染处理
 
