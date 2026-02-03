@@ -725,7 +725,7 @@ typedef NS_ENUM(NSInteger, NeonAITypes) {
 /**
  * 获取人脸检测结果报告
  */
-- (NSArray<FBFaceDetectionReport *> *)getFaceDetectionReport;
+//- (NSArray<FBFaceDetectionReport *> *)getFaceDetectionReport;
 
 /**
  * 判断是否检测到全身人体
@@ -737,7 +737,7 @@ typedef NS_ENUM(NSInteger, NeonAITypes) {
 /**
  * 获取人体检测结果报告
  */
-- (NSArray<FBPoseDetectionReport *> *)getPoseDetectionReport;
+//- (NSArray<FBPoseDetectionReport *> *)getPoseDetectionReport;
 
 #pragma mark - 其它
 /**
@@ -748,7 +748,7 @@ typedef NS_ENUM(NSInteger, NeonAITypes) {
  *
  * @return 功能模块的参数值，统一返回NSString类型，需根据具体参数类型转换，如NSString->int, NSString->float...
  */
-- (NSString *)getParamFrom:(NSString *)method property:(NSString *)key;
+//- (NSString *)getParamFrom:(NSString *)method property:(NSString *)key;
 
 /**
  * 部分透明图渲染支持开关
