@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'https://github.com/FaceBeauty/FaceBeautyPod.git'
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.author       = { 'facebeauty' => 'nimofacebeauty@163.com' }
-  spec.platform     = :ios, '12.0'
+  spec.platform     = :ios, '15.0'
   spec.swift_version = '5.0'
   #仅在真机运行
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
